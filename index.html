@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrossel de Imagens</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">PetAdopt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Adoção</a></li>
+                    <li><a href="#">Doação</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="carousel-container">
+        <button class="carousel-btn prev-btn" onclick="prevSlide()">❮</button>
+        <div class="carousel-slide">
+            <img class="carousel-image" src="imagens/carrossel 1.png" alt="Slide 1">
+            <img class="carousel-image" src="imagens/carrossel 2.png" alt="Slide 2">
+        </div>
+        <button class="carousel-btn next-btn" onclick="nextSlide()">❯</button>
+    </div>
+
+    <div class="adoption-container">
+        <h2>Cães Disponíveis para Adoção</h2>
+        <div class="dog-card">
+            <img src="imagens/1.png" alt="Cão 1">
+            <h3>Rex</h3>
+            <p>Idade: 3 anos</p>
+            <p>Sexo: Macho</p>
+            <button>Adotar</button>
+        </div>
+        <div class="dog-card">
+            <img src="imagens/2.png" alt="Cão 2">
+            <h3>Bruno</h3>
+            <p>Idade: 2 anos</p>
+            <p>Sexo: Macho</p>
+            <button>Adotar</button>
+        </div>
+        <div class="dog-card">
+            <img src="imagens/8.png" alt="Cão 3">
+            <h3>Rusty</h3>
+            <p>Idade: 4 anos</p>
+            <p>Sexo: Macho</p>
+            <button>Adotar</button>
+        </div>
+        <div class="dog-card">
+            <img src="imagens/7.png" alt="Cão 4">
+            <h3>Rufus</h3>
+            <p>Idade: 5 anos</p>
+            <p>Sexo: Macho</p>
+            <button>Adotar</button>
+        </div>
+        <!-- Adicione mais cães conforme necessário -->
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

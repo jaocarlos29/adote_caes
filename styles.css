@@ -1,0 +1,135 @@
+/* Estilos para o carrossel de imagens */
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+  
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+  
+.carousel-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    z-index: 2;
+}
+  
+.prev-btn {
+    left: 0;
+}
+  
+.next-btn {
+    right: 0;
+}
+
+header {
+    background: #1c858c; /* Gradiente de amarelo para azul */
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 60px; /* Adicionando margem na parte inferior */
+    font-family: Arial, sans-serif; /* Alterando a fonte */
+    height: 60px; /* Ajuste a altura conforme necessário */
+    font-family: "Madimi One", sans-serif;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para os containers dos cães disponíveis */
+.adoption-container {
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Alterando a fonte */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.dog-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #1c858c; /* Azul */
+    background-color: #fff; /* Branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.dog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Bordas arredondadas */
+}
+
+.dog-card h3,
+.dog-card p {
+    margin: 10px 0;
+    color: #000; /* Preto */
+}
+
+.dog-card button {
+    background-color: #1c858c; /* Azul */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dog-card button:hover {
+    background-color: #1c858c; /* Azul mais escuro ao passar o mouse */
+}
+
+body {
+    background: #e6e1d2; /* Gradiente de amarelo para azul */
+    font-family: Arial, sans-serif; /* Alterando a fonte */
+    margin: 0;
+    padding: 0;
+}
+
