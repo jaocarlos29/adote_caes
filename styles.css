@@ -8,13 +8,15 @@
 
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease; /* Adicionando transição suave */
+    transition: transform 0.5s ease;
+    /* Adicionando transição suave */
 }
 
 .carousel-image {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
 
 .carousel-btn {
@@ -38,24 +40,42 @@
 }
 
 header {
-    background: #1c858c; /* Gradiente de amarelo para azul */
+    background-color: #1c858c;
+    /* Cor de fundo do cabeçalho */
     color: #fff;
+    /* Cor do texto */
     padding: 20px 0;
-    margin-bottom: 60px; /* Adicionando margem na parte inferior */
-    font-family: Arial, sans-serif; /* Alterando a fonte */
-    height: 60px; /* Ajuste a altura conforme necessário */
+    /* Preenchimento superior e inferior */
     font-family: "Madimi One", sans-serif;
-}
-
-header .container {
+    /* Fonte do texto */
+    border-bottom: 3px solid #fff;
+    /* Adiciona uma borda branca na parte inferior do cabeçalho */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Adiciona uma sombra sutil */
+    height: 60px;
+    /* Altura do cabeçalho */
+    margin-bottom: 60px;
+    /* Adicionando margem na parte inferior */
+    text-align: center;
+    /* Centraliza o texto */
     display: flex;
+    /* Torna o cabeçalho um contêiner flexível */
     align-items: center;
-    justify-content: space-between;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: center;
+    /* Alinha os itens horizontalmente ao centro */
 }
 
 .logo {
     font-size: 24px;
-    margin: 0;
+    /* Tamanho da fonte do logotipo */
+    margin-right: 100px;
+    /* Move o logo para a esquerda */
+}
+
+.logo a {
+    font-size: 30px;
+    /* Tamanho da fonte apenas para o logo */
 }
 
 nav ul {
@@ -72,6 +92,8 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    /* Tamanho do texto do link */
 }
 
 nav ul li a:hover {
@@ -82,9 +104,11 @@ nav ul li a:hover {
 .adoption-container {
     margin: 20px auto;
     text-align: center;
-    font-family: Arial, sans-serif; /* Alterando a fonte */
+    font-family: Arial, sans-serif;
+    /* Alterando a fonte */
     padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
 
 .dog-card {
@@ -92,26 +116,41 @@ nav ul li a:hover {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    border: 5px solid #1c858c; /* Azul */
-    background-color: #fff; /* Branco */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 5px solid #1c858c;
+    /* Azul */
+    background-color: #fff;
+    /* Branco */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 .dog-card img {
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Bordas arredondadas */
+    border-radius: 50%;
+    /* Bordas arredondadas */
 }
 
 .dog-card h3,
 .dog-card p {
     margin: 10px 0;
-    color: #000; /* Preto */
+    color: #000;
+    /* Preto */
 }
 
+.dog-card:hover {
+    background-color: #f2f2f2;
+    /* Altere para a cor desejada */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave */
+}
+
+
 .dog-card button {
-    background-color: #1c858c; /* Azul */
+    background-color: #1c858c;
+    /* Azul */
     color: white;
     border: none;
     padding: 8px 16px;
@@ -121,12 +160,36 @@ nav ul li a:hover {
 }
 
 .dog-card button:hover {
-    background-color: #1c858c; /* Azul mais escuro ao passar o mouse */
+    background-color: #1c858c;
+    /* Azul mais escuro ao passar o mouse */
 }
 
 body {
-    background: #e6e1d2; /* Gradiente de amarelo para azul */
-    font-family: Arial, sans-serif; /* Alterando a fonte */
+    background: #e6e1d2;
+    /* Gradiente de amarelo para azul */
+    font-family: Arial, sans-serif;
+    /* Alterando a fonte */
     margin: 0;
     padding: 0;
+}
+
+.reviews-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.review {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    color: #1c858c;
+}
+
+.review p {
+    font-style: italic;
 }
