@@ -6,18 +6,17 @@
     position: relative;
 }
 
-  
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /* Adicionando transição suave */
 }
-  
+
 .carousel-image {
     width: 100%;
     height: auto;
     border-radius: 10px; /* Bordas arredondadas */
 }
-  
+
 .carousel-btn {
     cursor: pointer;
     position: absolute;
@@ -29,11 +28,11 @@
     border: none;
     z-index: 2;
 }
-  
+
 .prev-btn {
     left: 0;
 }
-  
+
 .next-btn {
     right: 0;
 }
@@ -47,7 +46,6 @@ header {
     height: 60px; /* Ajuste a altura conforme necessário */
     font-family: "Madimi One", sans-serif;
 }
-
 
 header .container {
     display: flex;
@@ -132,4 +130,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
