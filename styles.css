@@ -141,12 +141,9 @@ nav ul li a:hover {
 }
 
 .dog-card:hover {
-    background-color: #f2f2f2;
-    /* Altere para a cor desejada */
-    transition: background-color 0.3s ease;
-    /* Adiciona uma transição suave */
+    background-color: #f2f2f2; /* Altere para a cor desejada */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
-
 
 .dog-card button {
     background-color: #1c858c;
@@ -175,21 +172,43 @@ body {
 
 .reviews-container {
     margin: 20px auto;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .review {
     background-color: #f2f2f2;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Largura fixa */
+    height: 200px; /* Altura igual à largura */
+    display: flex;
+    flex-direction: column; /* Garante que o texto seja cortado corretamente */
+    align-items: center;
+    text-align: left;
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adiciona um espaço abaixo da imagem */
 }
 
 .review h3 {
     color: #1c858c;
+    margin-bottom: 10px;
 }
 
 .review p {
     font-style: italic;
+    margin: 0;
+    overflow: hidden; /* Adicione overflow para lidar com revisões mais longas */
+    text-overflow: ellipsis; /* Adicione texto de elipse para revisões mais longas */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de linhas para exibir antes da elipse */
+    -webkit-box-orient: vertical;
 }
