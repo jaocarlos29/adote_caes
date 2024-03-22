@@ -39,76 +39,65 @@
     right: 0;
 }
 
+/* Estilos para o cabeçalho */
 header {
-    background-color: #1c858c;
-    /* Cor de fundo do cabeçalho */
+    background-color: #339ca3;
     color: #fff;
-    /* Cor do texto */
     padding: 20px 0;
-    /* Preenchimento superior e inferior */
     font-family: "Madimi One", sans-serif;
-    /* Fonte do texto */
     border-bottom: 3px solid #fff;
-    /* Adiciona uma borda branca na parte inferior do cabeçalho */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    /* Adiciona uma sombra sutil */
-    height: 60px;
-    /* Altura do cabeçalho */
+    height: 115px;
     margin-bottom: 60px;
-    /* Adicionando margem na parte inferior */
     text-align: center;
-    /* Centraliza o texto */
     display: flex;
-    /* Torna o cabeçalho um contêiner flexível */
     align-items: center;
-    /* Alinha os itens verticalmente ao centro */
     justify-content: center;
-    /* Alinha os itens horizontalmente ao centro */
-}
-
-.logo {
-    font-size: 24px;
-    /* Tamanho da fonte do logotipo */
-    margin-right: 100px;
-    /* Move o logo para a esquerda */
-}
-
-.logo a {
-    font-size: 30px;
-    /* Tamanho da fonte apenas para o logo */
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: 50px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    /* Tamanho do texto do link */
+    font-size: 25px;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para os containers dos cães disponíveis */
-.adoption-container {
+nav ul li.logo {
+    margin-right: 0;
+}
+
+/* Estilos para os containers dos cães disponíveis e das avaliações dos adotantes */
+.adoption-container,
+.reviews-container {
     margin: 20px auto;
     text-align: center;
     font-family: Arial, sans-serif;
-    /* Alterando a fonte */
     padding: 20px;
     border-radius: 10px;
-    /* Bordas arredondadas */
+    margin-bottom: 40px;
+}
+
+.adoption-container h2,
+.reviews-container h2 {
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+    color: #339ca3;
 }
 
 .dog-card {
@@ -116,65 +105,47 @@ nav ul li a:hover {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    border: 5px solid #1c858c;
-    /* Azul */
+    border: 3px solid #1c858c;
     background-color: #fff;
-    /* Branco */
     border-radius: 10px;
-    /* Bordas arredondadas */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra */
 }
 
 .dog-card img {
     width: 100%;
     height: auto;
     border-radius: 50%;
-    /* Bordas arredondadas */
 }
 
 .dog-card h3,
 .dog-card p {
     margin: 10px 0;
     color: #000;
-    /* Preto */
 }
 
 .dog-card:hover {
-    background-color: #f2f2f2; /* Altere para a cor desejada */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
 }
 
 .dog-card button {
-    background-color: #1c858c;
-    /* Azul */
+    background-color: #f5a40f;
     color: white;
     border: none;
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .dog-card button:hover {
     background-color: #1c858c;
-    /* Azul mais escuro ao passar o mouse */
 }
 
 body {
     background: #e6e1d2;
-    /* Gradiente de amarelo para azul */
     font-family: Arial, sans-serif;
-    /* Alterando a fonte */
     margin: 0;
     padding: 0;
-}
-
-.reviews-container {
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .review {
@@ -183,10 +154,10 @@ body {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px; /* Largura fixa */
-    height: 200px; /* Altura igual à largura */
-    display: flex;
-    flex-direction: column; /* Garante que o texto seja cortado corretamente */
+    width: 10%;
+    height: auto;
+    display: inline-block;
+    flex-direction: column;
     align-items: center;
     text-align: left;
 }
@@ -195,7 +166,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-bottom: 10px; /* Adiciona um espaço abaixo da imagem */
+    margin-bottom: 10px;
 }
 
 .review h3 {
@@ -206,9 +177,117 @@ body {
 .review p {
     font-style: italic;
     margin: 0;
-    overflow: hidden; /* Adicione overflow para lidar com revisões mais longas */
-    text-overflow: ellipsis; /* Adicione texto de elipse para revisões mais longas */
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Número de linhas para exibir antes da elipse */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 950px;
+}
+
+.logo {
+    position: relative;
+}
+
+/* Estilos para o projeto */
+.our-project {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.our-project h2 {
+    font-family: "Madimi One", sans-serif;
+    color: #339ca3;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.our-project p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* Estilos para o projeto */
+.our-project {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.our-project h2 {
+    font-family: "Madimi One", sans-serif;
+    color: #339ca3;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.our-project p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* Estilos adicionais */
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 950px;
+}
+
+.logo {
+    position: relative;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #339ca3;
+    color: #fff;
+    padding: 20px 0;
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+}
+
+/* Estilos para o corpo */
+body {
+    background: #e6e1d2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para links */
+a {
+    color: #339ca3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
