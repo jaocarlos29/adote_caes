@@ -13,8 +13,8 @@
 }
 
 .carousel-image {
-    width: 100%;
-    height: auto;
+    width: 1100px;
+    height: 550px;
     border-radius: 10px;
     /* Bordas arredondadas */
 }
@@ -41,25 +41,24 @@
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #339ca3;
+    background-color: #296e40de;
     color: #fff;
-    padding: 20px 0;
+    padding: 25px 100px;
     font-family: "Madimi One", sans-serif;
     border-bottom: 3px solid #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     height: 115px;
     margin-bottom: 60px;
-    text-align: center;
+    text-align: left; /* Centralizar à esquerda */
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: relative; /* Adiciona posição relativa para o header */
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: 50px;
 }
 
 nav ul li {
@@ -78,8 +77,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav ul li.logo {
-    margin-right: 0;
+.logo {
+    margin-left: 20px; /* Ajusta a margem para posicionar a logo à esquerda */
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 /* Estilos para os containers dos cães disponíveis e das avaliações dos adotantes */
@@ -97,25 +103,26 @@ nav ul li.logo {
 .reviews-container h2 {
     font-family: "Madimi One", sans-serif;
     font-size: 40px;
-    color: #339ca3;
+    color: #296e40de;
 }
 
 .dog-card {
     display: inline-block;
-    width: 200px;
+    width: 150px; /* Reduzindo a largura do card para 150 pixels */
     margin: 10px;
     padding: 10px;
-    border: 3px solid #1c858c;
+    border: 3px solid #000000b6;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dog-card img {
-    width: 100%;
-    height: auto;
+    width: 100px; /* Reduzindo o tamanho da imagem para 100 pixels de largura */
+    height: 100px; /* Ajustando a altura da imagem proporcionalmente */
     border-radius: 50%;
 }
+
 
 .dog-card h3,
 .dog-card p {
@@ -129,7 +136,7 @@ nav ul li.logo {
 }
 
 .dog-card button {
-    background-color: #f5a40f;
+    background-color: #296e40de;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -138,14 +145,7 @@ nav ul li.logo {
 }
 
 .dog-card button:hover {
-    background-color: #1c858c;
-}
-
-body {
-    background: #e6e1d2;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #296e40de;
 }
 
 .review {
@@ -154,12 +154,13 @@ body {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 10%;
-    height: auto;
+    width: 300px;
+    height: 250px; /* Defina uma altura fixa para os cards de avaliação */
     display: inline-block;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura definida */
 }
 
 .review img {
@@ -170,31 +171,20 @@ body {
 }
 
 .review h3 {
-    color: #1c858c;
+    color: #296e40de;
     margin-bottom: 10px;
 }
 
 .review p {
     font-style: italic;
     margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    overflow: auto; /* Adiciona overflow auto para permitir rolagem em caso de texto longo */
+    text-overflow: unset; /* Remove a propriedade de texto de overflow */
+    display: block; /* Define o display como bloco */
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    max-height: none; /* Remove a altura máxima */
 }
 
-.logo img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 950px;
-}
-
-.logo {
-    position: relative;
-}
 
 /* Estilos para o projeto */
 .our-project {
@@ -210,7 +200,7 @@ body {
 
 .our-project h2 {
     font-family: "Madimi One", sans-serif;
-    color: #339ca3;
+    color: #296e40de;
     font-size: 40px;
     margin-bottom: 10px;
     text-align: center;
@@ -222,52 +212,11 @@ body {
     margin-bottom: 20px;
     margin-left: 300px;
     margin-right: 300px;
-}
-
-/* Estilos para o projeto */
-.our-project {
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f2f2f2;
-}
-
-.our-project h2 {
-    font-family: "Madimi One", sans-serif;
-    color: #339ca3;
-    font-size: 40px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.our-project p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-/* Estilos adicionais */
-.logo img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 950px;
-}
-
-.logo {
-    position: relative;
 }
 
 /* Estilos para o rodapé */
 footer {
-    background-color: #339ca3;
+    background-color: #296e40de;
     color: #fff;
     padding: 20px 0;
     font-family: "Madimi One", sans-serif;
