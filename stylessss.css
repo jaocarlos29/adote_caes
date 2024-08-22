@@ -1,0 +1,224 @@
+/* Estilos gerais */
+body {
+    background: #e6e1d2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #296e40de;
+    color: #fff;
+    padding: 25px 100px;
+    font-family: "cambria";
+    border-bottom: 3px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 115px;
+    margin-bottom: 60px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/* Estilos para o projeto */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    margin: 20px 70px 60px 70px; /* Aumentada a margem inferior para 60px */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-content h1 {
+    font-family: "cambria";
+    color: #296e40de;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Estilos para os containers dos cães disponíveis e das avaliações dos adotantes */
+.adoption-container {
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.adoption-container h2, h3, p {
+    font-family: "cambria";
+    font-size: 40px;
+    color: #296e40de;
+    text-align: center;
+}
+
+.dog-card {
+    display: inline-block;
+    width: 200px; /* Largura do card */
+    margin: 20px 10px; /* Ajustando o espaço vertical e horizontal */
+    padding: 20px;
+    border: 2px solid #000000b6;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza todo o conteúdo do card */
+    vertical-align: top; /* Garante que o conteúdo do card esteja alinhado ao topo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dog-card img {
+    width: 180px; /* Tamanho da imagem */
+    height: 180px; /* Altura da imagem */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.dog-card h3 {
+    margin: 10px 0;
+    font-family: "cambria";
+    font-size: 25px;
+    color: #000000de;
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.dog-card p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 17px;
+    text-align: center; /* Centraliza o texto das descrições */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dog-card:hover {
+    transform: translateY(-10px); /* Move o card 10px para cima */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.dog-card button {
+    background-color: #296e40de;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0 auto; /* Centraliza o botão e adiciona margem superior */
+    font-size: 15px;
+}
+
+.dog-card button:hover {
+    background-color: #296e40de;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #296e40de; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinhamento do texto centralizado */
+    font-size: 30px;
+    font-family: "cambria";
+}
+
+footer h3 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+footer img {
+    height: 52px;
+    width: 42px;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    display: inline; /* Exibir itens de lista horizontalmente */
+    color: #fff; 
+
+}
+
+/* Para telas com largura menor que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .project-content, .adoption-container, .reviews-container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .dog-card {
+        width: 100%; /* O card ocupa toda a largura disponível */
+        margin: 10px 0;
+    }
+    .carousel-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .carousel-image {
+        border-radius: 0;
+    }
+}

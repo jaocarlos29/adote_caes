@@ -1,0 +1,201 @@
+/* Estilos gerais */
+body {
+    background: #e6e1d2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #296e40de;
+    color: #fff;
+    padding: 25px 100px;
+    font-family: "cambria";
+    border-bottom: 3px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 115px;
+    margin-bottom: 60px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/* Estilos para o projeto */
+.project-content {
+    display: block; /* Altera o display para block para remover centralização flexível */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    margin: 20px 70px 60px 70px; /* Aumentada a margem inferior para 60px */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Justifica o texto para a esquerda */
+}
+
+.project-content h1 {
+    font-family: "cambria";
+    color: #296e40de;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center; /* Mantém o título centralizado */
+}
+
+.project-content p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 1000px; /* Limite a largura máxima do texto para melhor leitura */
+    font-family: "arial";
+    text-align: justify; /* Mantém o texto justificado, mas alinhado à esquerda */
+    padding-left: 80px;
+}
+
+.project-content img {
+    height: 35px;
+    width: 30px;
+    padding-right: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #296e40de; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinhamento do texto centralizado */
+    font-size: 30px;
+    font-family: "cambria";
+}
+
+footer h3 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+footer img {
+    height: 52px;
+    width: 42px;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    display: inline; /* Exibir itens de lista horizontalmente */
+
+}
+
+
+/* Estilos para a seção de conteúdo do projeto */
+.text-columns {
+    display: flex;
+    gap: 180px; /* Espaço entre as colunas */
+    margin: 0 auto;
+    max-width: 1000px; /* Limite de largura para manter o layout consistente */
+    
+}
+
+.text-columns p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 1000px; /* Limite a largura máxima do texto para melhor leitura */
+    text-align: center;
+    font-family: "arial";
+}
+
+/* Estilos para cada coluna */
+.column {
+    flex: 1; /* Cada coluna ocupa espaço igual */
+    max-width: 50%; /* Cada coluna ocupa no máximo 50% da largura total */
+}
+
+.column p {
+    margin-bottom: 20px; /* Espaço entre os parágrafos */
+}
+
+h2 {
+    font-family: "cambria";
+    color: #296e40de;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Para telas com largura menor que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .project-content, .adoption-container, .reviews-container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .dog-card {
+        width: 100%; /* O card ocupa toda a largura disponível */
+        margin: 10px 0;
+    }
+    .carousel-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .carousel-image {
+        border-radius: 0;
+    }
+}
